@@ -1,3 +1,4 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+def accueil_view(request):
+    return HttpResponse("<h1>Bienvenue sur l'application Santé CI 🚑</h1>")
