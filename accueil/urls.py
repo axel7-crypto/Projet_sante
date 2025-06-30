@@ -1,7 +1,6 @@
-from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
+from .views import accueil_view
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('accueil.urls')),  # 👈 Lien vers la page d'accueil
+    path('', accueil_view, name='accueil'),
 ]
